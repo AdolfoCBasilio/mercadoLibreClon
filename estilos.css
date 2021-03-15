@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background:#EBEBEB ;
+    height: 1000px;
+}
+
+
+.nav{
+    display: flex;
+    height: 5vh;
+    background:#FFF159 ;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgba(75, 72, 72, 0.2);
+    justify-content: space-around;
+    /* box-sizing: border-box; */
+}
+
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: content-box;
+    transition: 1s;
+    /* border: 1px solid #00B285; */
+    height: 100%;
+    /* width: 20vw; */
+    border-bottom-right-radius:30px ;
+}
+.logo:hover{ 
+    background: #00B285;
+    cursor: pointer;
+}
+.logoMercadoLibre{
+    margin: 0 10px ;
+    /* border: 1px solid red; */
+    height: 70%;
+}
+
+.contenedorBuscador{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+.contendorFondo{
+    display: flex;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    background: white;
+    border-radius: 3px;
+}
+.buscadorIcon{
+    display: flex;
+    align-content: center;
+    /* height: 70%; */
+    font-size: 13px;
+    margin: 0 10px;
+    background: white;
+    color: #B8B8B8;
+}
+.buscador{
+    display: flex;
+    height: 60%;
+    border: none;
+    width: 100%;
+    outline: none;
+}
+.buscador::placeholder{
+    color: #b8b8b89c;
+    font-size: medium;
+}
+
+
+
+.menu{
+    display: flex;
+    /* border: 1px solid red; */
+    height: 100%;
+    width: 10vw;
+    /* color: #b8b8b818; */
+}
+.containerLista{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    /* justify-content: space-around; */
+    /* border:1px solid blue; */
+    /* align-content: flex-end; */
+    /* align-items: flex-end;
+    justify-content: flex-end; */
+    /* position: relative;
+    top: 100px;
+    right: 100px; */
+}
+.car{
+    display: flex;
+    font-size: 20px;
+    color:#3333338e;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    list-style: none;
+    color: #00B285;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /* position: fixed; */
+    /* position: relative; */
+    /* position: absolute; */
+}
+.item:hover{
+    background: #00B285;
+    color:#282C34 ;
+}
+
+
+
+
+.navLocation{
+    /* border: 2px solid navy; */
+    display: flex;
+    align-content: center;
+    height: 4vh;
+    background:#FFF159 ;
+    /* border: 1px solid red; */
+    border-bottom: 1px solid rgba(75, 72, 72, 0.2);
+    /* justify-content: space-around; */
+    /* box-sizing: border-box; */
+}
+.containerLocation{
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+}
+.location{
+    margin: 0 10px;
+    /* border: 1px solid green; */
+    color: #3333338e;
+    font-size: small;
+}
+.textLocation{
+    /* border: 1px solid black; */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    color: #3333338e;
+}
+
+
+
+
+
+
+/*
+align-items=> una sola linea
+align-content=> dos o mas lineas
+*/
+.contenedor{
+    border: 2px solid #00b285 ;
+    border-radius: 30px;
+    width: 80%;
+    height: 500px;
+    background: #282C34;
+    margin: 50px auto;
+    display: flex;
+
+    flex-direction: row;
+    
+    /* flex-wrap: wrap; */
+    /* flex-wrap: nowrap; */
+
+    /* justify-content: space-around; */
+    /* align-items: flex-end; */
+    /* align-items: center; */ 
+    /* align-items: stretch; */
+    /* align-items: baseline; */
+
+    
+    
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+    
+    /* align-content: space-around; */
+    /* align-content: center; */
+}
+
+.hijo{
+    background: #00b285;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;/*quitar para stretch*/
+    color: #fff;
+    margin: 30px;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+
+    /* flex-grow: 1;
+    flex-shrink: 0; */
+    flex: 1 1 auto
+
+    
+}
+
+.otro{
+    order:1;
+    align-self: flex-end;
+}
+
