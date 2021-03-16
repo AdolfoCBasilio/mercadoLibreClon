@@ -11,44 +11,50 @@ body{
     height: 1000px;
 }
 
+.headerCont{
+    background: #FFF159;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .nav{
+    /* border: 1px solid blue; */
+    /* border: 1px solid red; */
     display: flex;
     height: 5vh;
     background:#FFF159 ;
-    /* border: 1px solid red; */
     border-bottom: 1px solid rgba(75, 72, 72, 0.2);
     justify-content: space-around;
+    max-width: 1024px;
+    width: 100%;
     /* box-sizing: border-box; */
 }
 
-
 .logo{
+    /* border: 1px solid #00B285; */
     display: flex;
     justify-content: center;
     align-items: center;
-    box-sizing: content-box;
-    transition: 1s;
-    /* border: 1px solid #00B285; */
     height: 100%;
-    /* width: 20vw; */
-    border-bottom-right-radius:30px ;
+    margin: 0 0 0 1% ;
 }
 .logo:hover{ 
     background: #00B285;
     cursor: pointer;
 }
 .logoMercadoLibre{
-    margin: 0 10px ;
     /* border: 1px solid red; */
     height: 70%;
 }
 
 .contenedorBuscador{
+    /* border: 1px solid red; */
     display: flex;
     height: 100%;
-    width: 100%;
+    width: 90vw;
     align-items: center;
+    margin:0 1%;
 }
 .contendorFondo{
     display: flex;
@@ -79,11 +85,9 @@ body{
     font-size: medium;
 }
 
-
-
 .menu{
     display: flex;
-    /* border: 1px solid red; */
+    /* border: 1px solid rgb(0, 157, 255); */
     height: 100%;
     width: 10vw;
     /* color: #b8b8b818; */
@@ -128,18 +132,19 @@ body{
     color:#282C34 ;
 }
 
-
-
-
 .navLocation{
-    /* border: 2px solid navy; */
+    /* border: 2px solid rgb(139, 252, 0); */
     display: flex;
-    align-content: center;
     height: 4vh;
     background:#FFF159 ;
+    /* justify-content: space-around; */
+
+    max-width: 1024px;
+    width: 100%;
+    /* align-content: center; */
     /* border: 1px solid red; */
     border-bottom: 1px solid rgba(75, 72, 72, 0.2);
-    /* justify-content: space-around; */
+    justify-content: space-between;
     /* box-sizing: border-box; */
 }
 .containerLocation{
@@ -160,75 +165,130 @@ body{
     color: #3333338e;
 }
 
-
-
-
-
-
-/*
-align-items=> una sola linea
-align-content=> dos o mas lineas
-*/
-.contenedor{
-    border: 2px solid #00b285 ;
-    border-radius: 30px;
-    width: 80%;
-    height: 500px;
-    background: #282C34;
-    margin: 50px auto;
+.containerArrow{
+    /* border: 1px solid white; */
+    /* background: red; */
     display: flex;
-
-    flex-direction: row;
-    
-    /* flex-wrap: wrap; */
-    /* flex-wrap: nowrap; */
-
-    /* justify-content: space-around; */
-    /* align-items: flex-end; */
-    /* align-items: center; */ 
-    /* align-items: stretch; */
-    /* align-items: baseline; */
-
-    
-    
-    /* justify-content: center; */
-    /* justify-content: space-between; */
-    
-    /* justify-content: flex-start; */
-    /* justify-content: flex-end; */
-
-    /* flex-direction: row-reverse; */
-    /* flex-direction: column; */
-    /* flex-direction: column-reverse; */
-    
-    /* align-content: space-around; */
-    /* align-content: center; */
+    align-items: center;
+    color: #3333338e;
+    margin-right: 1%;
 }
 
-.hijo{
-    background: #00b285;
-    border-radius: 10px;
-    width: 200px;
-    height: 100px;/*quitar para stretch*/
-    color: #fff;
-    margin: 30px;
-    padding: 20px;
-    font-size: 40px;
-    text-align: center;
 
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
 
-    /* flex-grow: 1;
-    flex-shrink: 0; */
-    flex: 1 1 auto
+/*Limite*/
 
+
+.limite {
+    background: #23475b;
+    color: white;
+    padding: 32px 15px;
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);/*  CUAL QUIERES QUE SEA EL ESPACIO MAXIMO DE TRABAJO */
+    justify-content: center;/* CENTRA RESPECTO A LA MEDIDA DE GRID TEMPLATE-COMLUMNS */
+  }
+  .contenedor {
+    display: grid;
+    grid-template-columns: 80px 1fr 320px;
+    grid-template-areas: "uno  dos       dos"
+                         "uno    tres      tres"
+                         "uno    tres      tres";
+    grid-gap: 10px;
+  }
+  .uno {
+    grid-area: uno;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    /* height: 100%;
+    width: 100%; */
+  }
+  .dos{
+      grid-area: dos;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: blue;
+      /* height: 100%;
+      width: 100%; */
+
+  }
+  .tres{
+      grid-area: tres;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      background: chartreuse;
+      /* height: 100%;
+      width: 100%; */
+
+  }
+
+
+
+
+
+  @media screen and (max-width: 768px) {
+   
+    .contenedor{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "dos  dos"
+                           "tres tres"
+                           "uno uno";
+                        }
+    .nav{
+        height: 5.5vh;
+    }
+    .navLocation{
+        height: 4.5vh;
+    }
+}
+
+
+
+  @media screen and (max-width: 425px) {
+    .contenedor{
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: "uno  uno"
+                           "dos tres"
+                           "dos tres";
+    }
+  
+
+  .menu{
+    width: 30vw;
+   
+}
+.logoMercadoLibre{
+    height: 70%;
+    margin: 0 5px;
+
+}
+
+
+.navLocation{
+    /* border: 1px solid red; */
+    height: 5vh;
+    padding: 0 1%;
+}
+.location{
+    margin: 0 5px;
+}
+
+
+.containerArrow{
+    margin-right: 1%;
+}
+
+}
+
+@media screen and ( max-width: 320px){
     
+  .menu{
+    width: 50vw;
+   
 }
-
-.otro{
-    order:1;
-    align-self: flex-end;
 }
-
