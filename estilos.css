@@ -176,101 +176,252 @@ body{
 
 
 
-/*Limite*/
 
 
-.limite {
-    background: #23475b;
-    color: white;
-    padding: 32px 15px;
-    display: grid;
-    grid-template-columns: minmax(auto, 1024px);/*  CUAL QUIERES QUE SEA EL ESPACIO MAXIMO DE TRABAJO */
-    justify-content: center;/* CENTRA RESPECTO A LA MEDIDA DE GRID TEMPLATE-COMLUMNS */
-  }
-  .contenedor {
-    display: grid;
-    grid-template-columns: 80px 1fr 320px;
-    grid-template-areas: "uno  dos       dos"
-                         "uno    tres      tres"
-                         "uno    tres      tres";
-    grid-gap: 10px;
-  }
-  .uno {
-    grid-area: uno;    
+/*Slide*/
+
+.contentSlide{
+    /* border: 10px solid red; */
     display: flex;
+    justify-content: center; 
+    height: 22.5vh;   
+    width: 100%; 
+}
+.contenedorImgSlide{
+    /* border: 5px solid blue; */
+    display: flex;
+    height: 100%;
+    width: 100%;
     justify-content: center;
-    align-items: center;
-    background: red;
-    /* height: 100%;
-    width: 100%; */
-  }
-  .dos{
-      grid-area: dos;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background: blue;
-      /* height: 100%;
-      width: 100%; */
-
-  }
-  .tres{
-      grid-area: tres;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      background: chartreuse;
-      /* height: 100%;
-      width: 100%; */
-
-  }
-
-
-
-
-
-  @media screen and (max-width: 768px) {
-   
-    .contenedor{
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "dos  dos"
-                           "tres tres"
-                           "uno uno";
-                        }
-    .nav{
-        height: 5.5vh;
-    }
-    .navLocation{
-        height: 4.5vh;
-    }
+}
+.imgSlide{
+    /* border: 10px solid black; */
+    display: flex;
+    object-fit: cover;
+    max-width: 1440px;
+    width: 100%;
+    height: 100%;
 }
 
 
 
-  @media screen and (max-width: 425px) {
-    .contenedor{
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "uno  uno"
-                           "dos tres"
-                           "dos tres";
-    }
-  
+.msiDiv{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    background:white;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+}
+.spanMsi{
+    /* border: 1px solid red; */
+    margin: 10px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    font-weight: lighter;
+    color:#2e2e2ea1 ;
+}
+.banamex{
+    /* border: 1px solid blue; */
+    height: 30px;
+    margin-bottom: 10px;
+}
+/* @media screen and (max-width: 2560px) {
+.contenedorImgSlide{
+    height: 22vh;
+} */
 
+.primerElemento{
+    /* border: 1px solid yellow; */
+    background: white;
+    margin: 0 2%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    height: 62vh;
+    display: flex;
+    flex-direction: column;
+}
+.primerElementoTitulo{
+    /* border: 2px solid green; */
+    font-size: larger;
+    font-family:Quicksand ;
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3% 4%;
+}
+.publicidadUno{
+    /* border: 5px solid yellow; */
+    border-radius: 10px solid red;
+    /* background: red; */
+    width: 100%;
+    /* height: 30vh; */
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.publicidadUnoImg{
+    /* border: 5px solid green; */
+    /* object-fit: contain; */
+    width: 80%;
+    object-position: 0px 2px;
+}
+.primerElementoReferencias{
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+}
+.referenciaSpan{
+color: black;
+font-family: Quicksand;
+margin: 1% 4%;
+font-size: small;
+font-weight: initial;
+}
+.referenciaH2{
+color: rgba(0, 0, 0, 0.5);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+margin: 1% 4%;
+font-size: large;
+font-weight: bold;
+}
+.referenciaH4{
+color: #5EC36C;
+font-family: Quicksand;
+margin: 1% 4%;
+font-size: x-small;
+
+}
+.referenciaH3{
+    color: #5EC36C;
+    font-family: Quicksand;
+    margin: 0% 4%;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 2%;
+
+}
+.verMas{
+    /* background: blueviolet; */
+    font-family: Quicksand;
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+.historialDeNav{
+    color: #3483FA;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: small;
+
+}
+.iconVermas{
+    color:#3483FA;
+    font-family: Quicksand;
+    font-size: small;
+}
+
+/* 
+
+.primerGrid{
+    display: grid;
+    grid-template-columns: minmax(auto, 1024px);
+    justify-content: center;
+}
+.contenedorPrimerGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "itemUno itemDos"
+                         "itemTres itemCuatro";
+    
+}
+.itemUno{
+    grid-area: itemUno;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.itemDos{
+    grid-area: itemDos;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.itemTres{
+    grid-area: itemTres;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.itemCuatro{
+    grid-area: itemCuatro;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.referenciaSpanGrid{
+    color: black;
+    font-family: Quicksand;
+    margin: 1% 4%;
+    font-size: 10px;
+    font-weight: initial;
+    }
+
+
+    .segundoElemento {
+        background: white;
+        margin: 0 2%;
+        border-radius: 5px;
+        margin-bottom: 3%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .segundoElementoImg{
+        border-radius: 10px solid red;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .publicidadDosImg{
+        object-fit: contain;
+        width: 80%;
+        object-position: 0px 2px;
+    }
+    .segundoElementoDos {
+        background: white;
+        margin: 0 2%;
+        border-radius: 5px;
+        margin-bottom: 6%;
+        display: flex;
+        flex-direction: row;
+    }
+     */
+
+  @media screen and (max-width: 425px) {
   .menu{
     width: 30vw;
    
 }
+
 .logoMercadoLibre{
     height: 70%;
     margin: 0 5px;
-
 }
 
-
 .navLocation{
-    /* border: 1px solid red; */
     height: 5vh;
     padding: 0 1%;
 }
@@ -278,15 +429,20 @@ body{
     margin: 0 5px;
 }
 
-
 .containerArrow{
     margin-right: 1%;
 }
 
+.imgSlide{
+    object-position: -170px 0px;
 }
 
-@media screen and ( max-width: 320px){
-    
+}
+
+
+
+
+@media screen and ( max-width: 320px){ 
   .menu{
     width: 50vw;
    
