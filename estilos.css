@@ -39,7 +39,7 @@ body{
     height: 100%;
     margin: 0 0 0 1% ;
 }
-.logo:hover{ 
+.logo:hover{
     background: #00B285;
     cursor: pointer;
 }
@@ -183,9 +183,9 @@ body{
 .contentSlide{
     /* border: 10px solid red; */
     display: flex;
-    justify-content: center; 
-    height: 22.5vh;   
-    width: 100%; 
+    justify-content: center;
+    height: 22.5vh;
+    width: 100%;
 }
 .contenedorImgSlide{
     /* border: 5px solid blue; */
@@ -331,47 +331,127 @@ font-weight: initial;
     font-size: small;
 }
 
-/* 
 
+
+
+
+.primerElementoGrid {
+    /* border: 1px solid yellow; */
+    background: white;
+    margin: 0 3%;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    /* height: 62vh; */
+    display: flex;
+    box-shadow: 0 2px 1px 0 rgb(0 0 0 / 10%);
+    flex-direction: column;
+}
+.primerElementoTituloGrid {
+    /* border: 2px solid green; */
+    font-size: larger;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-size: medium;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 12px 4%;
+}
 .primerGrid{
     display: grid;
     grid-template-columns: minmax(auto, 1024px);
     justify-content: center;
+    margin: 2%;
+
+
 }
 .contenedorPrimerGrid{
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "itemUno itemDos"
                          "itemTres itemCuatro";
-    
 }
-.itemUno{
+.itemUnoGrid{
+
     grid-area: itemUno;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
 
 }
-.itemDos{
+.itemDosGrid{
+
     grid-area: itemDos;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
-.itemTres{
+.itemTresGrid{
+
     grid-area: itemTres;
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
-.itemCuatro{
+.itemCuatroGrid{
+
     grid-area: itemCuatro;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    justify-content: flex-start;
+
 }
+
+
+
+.publicidadUnoGrid {
+
+    border-top: 1px solid rgba(0, 0, 0, 0.074);
+    /* border: 5px solid yellow; */
+    border-radius: 10px solid red;
+    /* background: red; */
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+.publicidadUnoImgGrid{
+    /* border: 5px solid green; */
+    /* object-fit: contain; */
+    width: auto;
+    height: 100%;
+    object-position: 0px 2px;
+}
+.primerElementoReferenciasGrid {
+
+    /* background: blue; */
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+.referenciaSpanGrid{
+
+color: black;
+font-family: Quicksand;
+margin: 1% 0%;
+font-size: small;
+font-weight: initial;
+}
+.referenciaH2Grid {
+
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui;
+    margin: 1% 0%;
+    font-size: large;
+    font-weight: bold;
+}
+/* }
+
 .referenciaSpanGrid{
     color: black;
     font-family: Quicksand;
@@ -410,13 +490,13 @@ font-weight: initial;
         margin-bottom: 6%;
         display: flex;
         flex-direction: row;
-    }
-     */
+    } */
 
+/*
   @media screen and (max-width: 425px) {
   .menu{
     width: 30vw;
-   
+
 }
 
 .logoMercadoLibre{
@@ -442,19 +522,19 @@ font-weight: initial;
 
 }
 
-@media screen and ( max-width: 375px){ 
+@media screen and ( max-width: 375px){
     .imgSlide{
         object-position: -100px 0px;
     }
   }
 
 
-@media screen and ( max-width: 320px){ 
+@media screen and ( max-width: 320px){
     .imgSlide{
         object-position: -100px 0px;
     }
   .menu{
     width: 50vw;
-   
+
 }
-}
+} */
