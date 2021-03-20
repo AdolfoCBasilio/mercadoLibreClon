@@ -12,7 +12,6 @@
          img.src =`./sources/slide/hill${index}.jpg`
          index++;
 
-         if(index===4) index = 1;
-     
+         if(index===6) index = 1;
         }, 4000);
 })(document);

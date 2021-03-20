@@ -232,33 +232,36 @@ body{
     height: 22vh;
 } */
 
-.primerElemento{
+.primerElemento {
     /* border: 1px solid yellow; */
     background: white;
-    margin: 0 2%;
+    margin: 0 3%;
     border-radius: 5px;
     margin-bottom: 5%;
-    height: 62vh;
+    /* height: 62vh; */
     display: flex;
+    box-shadow: 0 2px 1px 0 rgb(0 0 0 / 10%);
     flex-direction: column;
 }
-.primerElementoTitulo{
+.primerElementoTitulo {
     /* border: 2px solid green; */
     font-size: larger;
-    font-family:Quicksand ;
+    font-family: Quicksand;
     font-weight: bold;
     font-size: medium;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 3% 4%;
+    margin: 12px 4%;
 }
-.publicidadUno{
+
+.publicidadUno {
+    border-top: 1px solid rgba(0, 0, 0, 0.074);
     /* border: 5px solid yellow; */
     border-radius: 10px solid red;
     /* background: red; */
     width: 100%;
-    /* height: 30vh; */
+    height: 42vh;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -266,54 +269,54 @@ body{
 .publicidadUnoImg{
     /* border: 5px solid green; */
     /* object-fit: contain; */
-    width: 80%;
+    width: auto;
+    height: 100%;
     object-position: 0px 2px;
 }
-.primerElementoReferencias{
+.primerElementoReferencias {
     /* background: blue; */
     display: flex;
     flex-direction: column;
+    padding: 16px;
 }
 .referenciaSpan{
 color: black;
 font-family: Quicksand;
-margin: 1% 4%;
+margin: 1% 0%;
 font-size: small;
 font-weight: initial;
 }
-.referenciaH2{
-color: rgba(0, 0, 0, 0.5);
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-margin: 1% 4%;
-font-size: large;
-font-weight: bold;
+.referenciaH2 {
+    color: rgba(0, 0, 0, 0.5);
+    font-family: system-ui;
+    margin: 1% 0%;
+    font-size: large;
+    font-weight: bold;
 }
-.referenciaH4{
-color: #5EC36C;
-font-family: Quicksand;
-margin: 1% 4%;
-font-size: x-small;
-
-}
-.referenciaH3{
-    color: #5EC36C;
+.referenciaH4 {
+    color: #39B54A;
     font-family: Quicksand;
-    margin: 0% 4%;
+    margin: 1% 0%;
+    font-size: small;
+}
+.referenciaH3 {
+    color: #39B54A;
+    font-family: Quicksand;
+    margin: 1% 0%;
     font-size: small;
     font-weight: bold;
     margin-bottom: 2%;
-
 }
-.verMas{
+.verMas {
     /* background: blueviolet; */
     font-family: Quicksand;
-    height: 6vh;
+    height: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0% 5%;
+    margin-top: -5%;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 .historialDeNav{
     color: #3483FA;
@@ -434,15 +437,22 @@ font-size: x-small;
 }
 
 .imgSlide{
-    object-position: -170px 0px;
+    object-position: -83px 0px;
 }
 
 }
 
-
+@media screen and ( max-width: 375px){ 
+    .imgSlide{
+        object-position: -100px 0px;
+    }
+  }
 
 
 @media screen and ( max-width: 320px){ 
+    .imgSlide{
+        object-position: -100px 0px;
+    }
   .menu{
     width: 50vw;
    
